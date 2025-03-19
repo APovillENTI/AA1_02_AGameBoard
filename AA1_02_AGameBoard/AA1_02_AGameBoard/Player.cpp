@@ -92,5 +92,6 @@ void existGem()
 {
     if (player.position[player.posX][player.posY] != LIBRE)
     {
+
     }
 }
