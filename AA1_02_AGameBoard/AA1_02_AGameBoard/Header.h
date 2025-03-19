@@ -4,5 +4,5 @@ struct Player {
     char position[5][5];
     int posX;
     int posY;
-    int score = 0;
+    int score;
 };
