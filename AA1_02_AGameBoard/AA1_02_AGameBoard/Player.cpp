@@ -6,7 +6,7 @@
 //PlayerMovement que se desea hacer.Devuelve true si el movimiento es válido y false en caso contrario.
 //Reflexione(antes de programar) que debe considerarse “movimiento válido”.
 
-bool checkMovement(char position[5][5], char PlayerMovement)
+bool CheckMovement(char position[5][5], char PlayerMovement)
 {
     if ()
     {
@@ -19,7 +19,7 @@ bool checkMovement(char position[5][5], char PlayerMovement)
 //Una función addScore que actualiza el score del jugador del jugador sumando 1.
 //Reflexione(antes de programar) si ésta función tiene que tener o no parámetros.
 
-void addScore(Player& player)
+void AddScore(Player& player)
 {
     player.score++;
 }
@@ -30,7 +30,7 @@ void addScore(Player& player)
 //del tipo de PlayerMovement que se le pasa cómo parámetro.Reflexione(antes de programar) si la función también
 //tiene que recibir cómo parámetro la posición dónde está el jugador o no.
 
-void movePlayer(Player& Player)
+void MovePlayer(Player& Player)
 {
     //DungeonCreator(position);
 
@@ -66,7 +66,7 @@ void PlayerAction(char input, Player& Player)
 //Una función setPosition que actualiza la posición del jugador.Reflexione(antes de programar) qué
 //parámetros debe tener esta función.
 
-void setPosition(Player& player, int moveY, int moveX)
+void SetPosition(Player& player, int moveY, int moveX)
 {
     position[Player.posY][Player.posX] = ' '; //La posicion actual de la entidad pasa a estar vacía
     player.posX += moveX; //Se cambia el valor de las posiciones
@@ -88,7 +88,7 @@ void setPosition(Player& player, int moveY, int moveX)
 //jugador según el tipo de PlayerMovement que se la pasa cómo parámetro y false en caso contrario.
 //Reflexione(antes de programar) si la función también tiene que recibir cómo parámetro la posición dónde está el jugador o no.
 
-void existGem()
+void ExistGem()
 {
     if (player.position[player.posX][player.posY] != LIBRE)
     {
