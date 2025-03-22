@@ -66,8 +66,8 @@ void InitializeMap(mapElem**& map, int& rows, int& cols, int& pinchos, int& gems
 		int b, a;
 		do
 		{
-			a = RandomRange(1, rows - 2);
-			b = RandomRange(1, cols - 2);
+			a = RandomRange(1, rows - 1);
+			b = RandomRange(1, cols - 1);
 		} while (map[a][b] != LIBRE);
 		map[a][b] = GEMA;
 	}
@@ -118,10 +118,11 @@ void DeleteMap(mapElem** map, int rows)
 
 void main()
 {
+	srand(time(NULL));
 	int rows, cols, pinchos_num, gems_num;
 	InitializeRowsCols(rows, cols);
 	mapElem** map = new mapElem * [rows];
 	InitializeMap(map, rows, cols, pinchos_num, gems_num);
 	DrawMap(map, rows, cols);
-	DeleteMap(map)
+	DeleteMap(map, rows);
 }
