@@ -1,6 +1,7 @@
 #include <cstdio>
 #include <cstdlib>
 #include <iostream>
+#include "Header.h"
 
 
 //Una función movePlayer que mueve al jugador a la siguiente casilla de dónde se encuentra dependiendo
