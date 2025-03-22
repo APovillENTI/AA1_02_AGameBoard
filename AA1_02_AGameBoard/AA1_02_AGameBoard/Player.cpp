@@ -141,5 +141,5 @@ void AddScore(Player& player)
 void GameOver()
 {
     if (countGemas == 0 || position[Player.posY][Player.posX] == 'M')
-        DestroyBoard();
+        DeleteMap();
 }
